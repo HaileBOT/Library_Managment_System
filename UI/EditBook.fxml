@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="UI.EditBookController" prefWidth="400.0" prefHeight="300.0">
+    <children>
+        <Label layoutX="30.0" layoutY="30.0" text="Edit Book" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <Label layoutX="30.0" layoutY="80.0" text="ISBN:" />
+        <TextField fx:id="isbnField" layoutX="100.0" layoutY="75.0" prefWidth="250.0" />
+        <Label layoutX="30.0" layoutY="130.0" text="Title:" />
+        <TextField fx:id="titleField" layoutX="100.0" layoutY="125.0" prefWidth="250.0" />
+        <Label layoutX="30.0" layoutY="180.0" text="Author:" />
+        <TextField fx:id="authorField" layoutX="100.0" layoutY="175.0" prefWidth="250.0" />
+        <Button text="Save" layoutX="100.0" layoutY="230.0" prefWidth="80.0" onAction="#handleSave" />
+        <Button text="Cancel" layoutX="200.0" layoutY="230.0" prefWidth="80.0" onAction="#handleCancel" />
+        <!-- You can add an <ImageView> here if you want to show a book image -->
+    </children>
+</AnchorPane>

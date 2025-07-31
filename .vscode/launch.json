@@ -1,0 +1,32 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "LibraryApp",
+            "request": "launch",
+            "mainClass": "UI.LibraryApp",
+            "projectName": "My library_65fc881f",
+            "vmArgs": "--module-path C:/Users/User/Downloads/openjfx-24.0.1_windows-x64_bin-sdk/javafx-sdk-24.0.1/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "DbConnection",
+            "request": "launch",
+            "mainClass": "DB.DbConnection",
+            "projectName": "My library_65fc881f"
+        },
+        {
+            "type": "java",
+            "name": "Debug DbConnection.java",
+            "request": "launch",
+            "mainClass": "DB.DbConnection",
+            "projectName": "My library",
+            "env": {
+                "CLASSPATH": ".;postgresql-42.7.7.jar"
+            },
+            "vmArgs": "--module-path C:/Users/User/Downloads/openjfx-24.0.1_windows-x64_bin-sdk/javafx-sdk-24.0.1/lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
